@@ -1,4 +1,4 @@
-Chamber Name,State,# of officials,Districts/Seats,Term Start Date,Party Control,New Districts
+Chamber Name,State,# of Officials,Districts/Seats,Term Start Date,Party Control,New Districts
 Alabama Governor,AL,2,2,2019-01-21,R,No
 Alabama House of Representatives,AL,105,All,2018-11-07,R,Yes
 Alabama State Senate,AL,70,All,2018-11-07,R,Yes
@@ -27,9 +27,9 @@ California Senate,CA,20,even seats,2018-12-03,D,No
 California State Assembly,CA,80,All,2018-12-03,D,No
 Carlsbad City Council,CA,3,"1,3, Mayor",2018-11-13,N,Yes
 Chula Vista City Council,CA,3,"Mayor, Districts 1, 2",2018-12-04,N,No
-City of Coral Springs Commission,,4,"Mayor (2 yrs) Seats 2,4,5 (4 years)",2018-11-13,N,No
+City of Coral Springs Commission,FL,4,"Mayor (2 yrs) Seats 2,4,5 (4 years)",2018-11-13,N,No
 Clarksville City Council,TN,6,"1, 2, 6, 7, 10, 11",2019-01-01,N,No
-Cole County Commission,,1,Presiding commissioner,2019-01-01,N,No
+Cole County Commission,MO,1,Presiding commissioner,2019-01-01,N,No
 College Station City Council,TX,2,"4,6",2018-11-08,N,No
 Colorado Governor,CO,1,,2019-01-08,D,No
 Colorado House of Representatives,CO,65,All,2019-01-09,D,No
