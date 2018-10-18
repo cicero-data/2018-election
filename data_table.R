@@ -48,12 +48,12 @@ election_table <-
                                        'color': 'white', 
                                        'font-family': 'Libre Franklin',
                                        'font-size': '14px',
-                                       'background-color': 'black'});",
+                                       'background-color': '#27323d'});",
                                    "}"
                                  ))) %>% 
   formatStyle(
     'Party Control',
-    backgroundColor = styleEqual(c('D', 'R', 'C', 'N', 'I'), c('lightblue', 'pink', 'yellow', 'grey', 'purple'))
+    backgroundColor = styleEqual(c('D', 'R', 'C', 'N', 'I'), c('lightblue', 'pink', '#f1b210', '#f4f6f8', '#d45db0'))
   ) %>%
   formatStyle(c('Chamber Name'), fontWeight = 'bold')
 
