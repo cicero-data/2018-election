@@ -23,7 +23,8 @@ election_table <-
                                 (list(targets = c(3,6), visible = FALSE)),
                                 (list(targets = 0, width = '300px')),
                                 (list(targets = 4, width = '120px')),
-                                (list(targets = 2, width = '90px'))
+                                (list(targets = 2, width = '100px')),
+                                (list(targets = 1, width = '80px'))
                                 ),
                               #scrollCollapse=TRUE,
                                pageLength = 10,
@@ -49,3 +50,4 @@ election_table <-
   formatStyle(c('Chamber Name'), fontWeight = 'bold')
 
 saveWidget(frameableWidget(election_table), "index.html", selfcontained = FALSE, libdir = "src/")
+
