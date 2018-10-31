@@ -6,23 +6,11 @@ library(widgetframe)
 dat <- read_csv('data/2018_election_chambers.csv')
 
 head(dat)
-
-
-    
-    # Blue to Dark Pink range
-    #dark_pink <- '#F07272'
-    #light_pink <- '#FFB0B0'
-    #light_blue <- '#C2DDF7'
-    #dark_blue <- '#64A9E2'
-
-gop_red <- '#DA4D63'
-dem_blue <- '509CC8'
-
     
 #create data table as R object
 election_table <- 
   datatable(dat, rownames = FALSE,
-                             colnames=c("Chamber Name", "State","# of officials", "Districts/Seats", 
+                             colnames=c("Chamber Name", "State","# of Officials", "Districts/Seats", 
                                         "Term Start Date", "Party Control", "New Districts"), 
                              extensions = 'Responsive',
                              class = 'compact hover row-border',
@@ -32,7 +20,10 @@ election_table <-
                               order = list(list(4, 'asc')),
                               columnDefs = list(
                                 (list(className = 'dt-left', targets = c(0,1,2,3,4,5)) ),
-                                (list(targets = c(3,6), visible = FALSE))
+                                (list(targets = c(3,6), visible = FALSE)),
+                                (list(targets = 0, width = '300px')),
+                                (list(targets = 4, width = '120px')),
+                                (list(targets = 2, width = '90px'))
                                 ),
                               #scrollCollapse=TRUE,
                                pageLength = 10,
@@ -53,9 +44,8 @@ election_table <-
                                  ))) %>% 
   formatStyle(
     'Party Control',
-    backgroundColor = styleEqual(c('D', 'R', 'C', 'N', 'I'), c('lightblue', 'pink', '#f1b210', '#f4f6f8', '#d45db0'))
+    backgroundColor = styleEqual(c('Democrat', 'Republican', 'Coalition', 'Nonpartisan', 'Independent'), c('lightblue', 'pink', '#f1b210', '#f4f6f8', '#d45db0'))
   ) %>%
   formatStyle(c('Chamber Name'), fontWeight = 'bold')
 
 saveWidget(frameableWidget(election_table), "index.html", selfcontained = FALSE, libdir = "src/")
-
